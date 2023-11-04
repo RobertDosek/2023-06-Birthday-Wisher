@@ -1,11 +1,13 @@
 import datetime as dt
 import smtplib
 from random import choice
+import os
 
 SEND_DAY = 6
 MY_EMAIL = "robert.d.python@gmail.com"
-GMPSW = "mgtszwmykzrvkzkk"
+GMPSW = os.environ['GMPSW']
 RECIPIENT = "robertdpython@yahoo.com"
+
 
 now = dt.datetime.now()
 today = now.isoweekday()
